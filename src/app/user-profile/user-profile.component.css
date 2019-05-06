@@ -1,0 +1,13 @@
+.user-profile {
+    background-color: burlywood;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 200px;
+}
+
+.user-profile p {
+    text-align: center;
+}

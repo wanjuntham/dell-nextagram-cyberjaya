@@ -1,0 +1,12 @@
+#nav-bar {
+    height: 75px;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+#nav-bar a {
+    margin-right: 30px;
+}
