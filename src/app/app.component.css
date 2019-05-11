@@ -1,12 +1,17 @@
 #nav-bar {
     height: 75px;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items:center;
+    text-align: left;
+    border-bottom: 1px ridge black;
+    position: fixed;
+    top: 0;
 }
 
 #nav-bar a {
-    margin-right: 30px;
+    font-family: Helvetica, Arial;
+    font-size: 200%;
 }

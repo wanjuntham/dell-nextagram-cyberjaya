@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterState } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-user-page',
@@ -8,9 +9,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./user-page.component.css']
 })
 export class UserPageComponent implements OnInit {
-  userImages = []
+  userImages :{}
 
-  constructor(private userService: UserService, private route: ActivatedRoute) { }
+  constructor(private userService: UserService, private route: ActivatedRoute) {
+    
+   }
 
   ngOnInit() {
     const userId = this.route.snapshot.params.userId

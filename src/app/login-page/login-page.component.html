@@ -1,0 +1,9 @@
+<form [formGroup] = "existingUser" (ngSubmit) = "onSubmit()" id = "login">
+  <h3>Login</h3>
+  <p>Email:</p>
+  <input type = "text" formControlName = "email" placeholder = "Enter your email"/>
+  <p>Password:</p>
+  <input type="password" formControlName = "password" placeholder="Enter your password"/>
+  <p> </p>
+  <input type="submit" value = "Login!" [disabled] = "this.existingUser.invalid"/>
+</form>

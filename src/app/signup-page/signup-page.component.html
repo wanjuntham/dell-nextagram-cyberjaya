@@ -1,0 +1,13 @@
+<form [formGroup] = "newUser" (ngSubmit) = "onSubmit()" id = "signup">
+  <h3>Signup Form</h3>
+  <p>Email:</p>
+  <input type = "text" formControlName = "email" placeholder = "Must be in Email form"/>
+  <p>Username:</p>
+  <input type = "text" formControlName = "username" placeholder = "Must not exceed 16 characters"/>
+  <p>Password:</p>
+  <input type="password" formControlName = "password" placeholder="Must have minimum of 8 characters"/>
+  <p>Confirm Password:</p>
+  <input type ="password" [formControl] = "confirmPw"/>
+  <p> </p>
+  <input type="submit" value = "Sign Up!" [disabled] = "this.newUser.invalid"/>
+</form>
